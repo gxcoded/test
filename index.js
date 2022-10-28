@@ -7,6 +7,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log("Server Running at Port " + PORT));
 
 app.get("/", (req, res) => {
-  res.status(200).send("hello world");
+  res.status(200).send("hello world " + process.env.AUTH_TOKEN);
 });
 console.log("hello world");
